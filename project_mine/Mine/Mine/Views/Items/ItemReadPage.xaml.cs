@@ -36,6 +36,20 @@ namespace Mine.Views
             await Navigation.PopAsync();
         }
 
+        /// <summary>
+        /// Open the Update page for this item
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        ///
+
+        public async void UpdateItem_Clicked(object sender, EventArgs e)
+
+        {
+            await Navigation.PushModalAsync(new NavigationPage(new ItemUpdatePage(viewModel)));
+            await Navigation.PopAsync();
+        }
+
         public ItemReadPage()
         {
             InitializeComponent();
