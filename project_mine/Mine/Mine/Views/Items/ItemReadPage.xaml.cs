@@ -33,6 +33,7 @@ namespace Mine.Views
 
         {
             await Navigation.PushModalAsync(new NavigationPage(new ItemDeletePage(viewModel)));
+            await Navigation.PopAsync();
         }
 
         public ItemReadPage()
