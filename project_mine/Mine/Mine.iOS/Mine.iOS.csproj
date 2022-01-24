@@ -129,11 +129,16 @@
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
     <ProjectReference Include="..\Mine\Mine.csproj">
-      <Project>{D790C2CF-BA5A-4208-801C-0AF9AA143B7A}</Project>
+      <Project>{495298DB-8152-42D2-BEC0-83E358EC2DD4}</Project>
       <Name>Mine</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\xamarin_logo.png" />
+    <BundleResource Include="Resources\icon_cancel.png" />
+    <BundleResource Include="Resources\icon_add.png" />
+    <BundleResource Include="Resources\icon_delete.png" />
+    <BundleResource Include="Resources\icon_save.png" />
+    <BundleResource Include="Resources\icon_update.png" />
   </ItemGroup>
 </Project>
