@@ -131,6 +131,11 @@
     <Content Include="Assets\Wide310x150Logo.scale-100.png" />
     <Content Include="Assets\Wide310x150Logo.scale-200.png" />
     <Content Include="Assets\Wide310x150Logo.scale-400.png" />
+    <Content Include="icon_add.png" />
+    <Content Include="icon_cancel.png" />
+    <Content Include="icon_delete.png" />
+    <Content Include="icon_save.png" />
+    <Content Include="icon_update.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="xamarin_logo.png" />
   </ItemGroup>
@@ -154,13 +159,6 @@
       <Project>{D790C2CF-BA5A-4208-801C-0AF9AA143B7A}</Project>
       <Name>Mine</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="icon_add.png" />
-    <None Include="icon_cancel.png" />
-    <None Include="icon_delete.png" />
-    <None Include="icon_save.png" />
-    <None Include="icon_update.png" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
