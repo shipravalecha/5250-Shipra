@@ -40,7 +40,7 @@ namespace UnitTests.Models
             Assert.AreEqual("Title", result.Title);
         }
         [Test]
-        public void HomeMenuItem_Get_Valid_Default_Should_Pass()
+        public void ItemModel_Get_Valid_Default_Should_Pass()
         {
             // Arrange
 
