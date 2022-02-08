@@ -10,7 +10,20 @@ namespace UnitTests.Models
     public class ItemModelTests
     {
         [Test]
-        public void ItemModel_Constructor_Valid_()
+        public void ItemModel_Constructor_Valid_Default_Should_Pass()
+        {
+            // Arrange
+
+            // Act
+            var result = new ItemModel();
+
+            // Reset
+
+            // Assert
+            Assert.IsNotNull(result);
+        }
+
+        public void ItemModel_Set_Get_Valid_Default_Should_Pass()
         {
             // Arrange
 
@@ -28,6 +41,18 @@ namespace UnitTests.Models
             Assert.AreEqual("ID", result.Id);
             Assert.AreEqual("Text", result.Text);
             Assert.AreEqual(1, result.Value);
+        }
+        public void ItemModel_Get_Valid_Default_Should_Pass()
+        {
+            // Arrange
+
+            // Act
+            var result = new ItemModel();
+
+            // Reset
+
+            // Assert
+            Assert.AreEqual(0, result.Value);
         }
     }
 }
