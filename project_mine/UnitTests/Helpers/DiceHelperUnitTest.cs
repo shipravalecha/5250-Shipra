@@ -8,7 +8,7 @@ using NUnit.Framework;
 namespace UnitTests.Helpers
 {
     [TestFixture]
-    public class DiceHelperUnitTest
+    public class DiceHelperTests
     {
         [Test]
         public void RollDice_Invalid_Roll_Zero_Should_Return_Zero()
@@ -24,12 +24,13 @@ namespace UnitTests.Helpers
             Assert.AreEqual(0, result);
         }
 
+        [Test]
         public void RollDice_Valid_Roll_1_Dice_6_Should_Return_Between_1_And_6()
         {
             // Arrange
 
             // Act
-            var result = DiceHelper.RollDice(0, 1);
+            var result = DiceHelper.RollDice(1, 6);
 
             // Reset
 
@@ -38,6 +39,7 @@ namespace UnitTests.Helpers
             Assert.AreEqual(true, result <= 6);
         }
 
+        [Test]
         public void RollDice_Invalid_Roll_Forced_1_Should_Return_1()
         {
             // Arrange
