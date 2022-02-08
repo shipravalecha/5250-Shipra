@@ -15,7 +15,7 @@ namespace UnitTests.Models
             // Arrange
 
             // Act
-            var result = new ItemModel();
+            var result = new HomeMenuItem();
 
             // Reset
 
@@ -29,19 +29,15 @@ namespace UnitTests.Models
             // Arrange
 
             // Act
-            var result = new ItemModel();
-            result.Description = "Description";
-            result.Id = "ID";
-            result.Text = "Text";
-            result.Value = 1;
+            var result = new HomeMenuItem();
+            result.Id = MenuItemType.Items;
+            result.Title = "Title";
 
             // Reset
 
             // Assert
-            Assert.AreEqual("Description", result.Description);
-            Assert.AreEqual("ID", result.Id);
-            Assert.AreEqual("Text", result.Text);
-            Assert.AreEqual(1, result.Value);
+            Assert.AreEqual(MenuItemType.Items, result.Id);
+            Assert.AreEqual("Title", result.Title);
         }
         [Test]
         public void HomeMenuItem_Get_Valid_Default_Should_Pass()
